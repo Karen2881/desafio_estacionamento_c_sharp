@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Estacionamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Sistema de Estacionamento</h1>
+
+    <div>
+        <h3>Adicionar veículo</h3>
+        <input type="text" id="placaInput" placeholder="Placa do veículo">
+        <button onclick="adicionarVeiculo()">Adicionar</button>
+    </div>
+
+    <div>
+        <h3>Veículos estacionados</h3>
+        <button id="btnListar">Listar</button>
+        <ul id="listaVeiculos"></ul>
+    </div>
+
+    <div>
+        <h3>Remover veículo</h3>
+        <input type="text" id="placaRemover" placeholder="Placa">
+        <input type="number" id="tempoHoras" placeholder="Horas">
+        <input type="number" id="tempoMinutos" placeholder="Minutos">
+        <button onclick="removerVeiculo()">Remover</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
